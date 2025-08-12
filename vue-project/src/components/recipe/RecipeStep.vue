@@ -2,11 +2,11 @@
     export default {
         name: 'RecipeStep',
         props: {
-    steps: {
-      type: Array,
-      required: true
-    }
-  }
+        steps: {
+          type: Array,
+          required: true
+        }
+      }
     }
 </script>
 

@@ -1,38 +1,36 @@
-<script setup>
-  import RecipeDescription from '@/components/recipe/RecipeDescription.vue';
+<script>
+import AppFooter from './components/AppFooter.vue';
+import AppHeader from './components/AppHeader.vue';
+import axios from 'axios';
+
+export default {
+  name: 'App',
+  components: { AppHeader, AppFooter },
+  data() {
+    return {
+      appData: null
+    };
+  },
+  mounted() {
+    axios.get('/data.json') // fichier placé dans /public
+      .then(response => {
+        this.appData = response.data;
+      })
+      .catch(error => {
+        console.error("Erreur lors du chargement de data.json :", error);
+      });
+  }
+}
 </script>
 
 <template>
   <header>
-    <img
-      alt="Vue logo"
-      class="logo"
-      src="@/assets/logo.svg"
-      width="125"
-      height="125"
-    />
-    <h1 class="text-center mt-3">Bienvenue sur Recettes X</h1>
+    <AppHeader />
   </header>
-
   <main>
-    <RecipeDescription />
-    <!-- Vue router affiche ici la vue active (comme HomeView) -->
-    <router-view />
+    <router-view v-if="appData" :appData="appData" />
   </main>
+  <footer>
+    <AppFooter />
+  </footer>
 </template>
-
-<style scoped>
-header {
-  line-height: 1.5;
-  text-align: center;
-}
-
-.logo {
-  display: block;
-  margin: 0 auto;
-}
-
-main {
-  padding: 2rem;
-}
-</style>

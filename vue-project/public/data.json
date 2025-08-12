@@ -1,17 +1,399 @@
-[
+{
+  "login": [
+    { "id": 1, "label": "Email", "type": "email", "model": "email" },
+    { "id": 2, "label": "Password", "type": "password", "model": "password" }
+  ],
+  "users": [
+    { "id": 1, "username": "johndoe", "email": "johndoe@example.com", "password": "Password123!", "newsletter": true, "terms": true, "role": "user" },
+    { "id": 2, "username": "janedoe", "email": "janedoe@example.com", "password": "SecurePass456!", "newsletter": false, "terms": true, "role": "admin" }
+  ],
+"recipes": [
   {
-    "id": 1,
-    "name": "Produit 1",
-    "price": 10.99
+  "recipe_id": 1,
+  "title": "Boeuf sauté aux légumes et graines de sésame",
+  "slug": "boeuf-saute-aux-legumes-et-graines-de-sesame",
+  "prep_time": 20,
+  "cook_time": 15,
+  "image": "src/assets/boeuf_saute.jpg",
+  "servings": 4,
+  "date_added": "2025-07-01 10:00:00",
+  "date_modified": "2025-07-01 10:00:00",
+  "summary": "Découvrez notre délicieux Bœuf Sauté aux Légumes et Graines de Sésame, un plat savoureux qui allie la tendreté du bœuf mariné à la perfection avec la fraîcheur des légumes croquants et un mélange d'épices exotiques.",
+  "ingredients": [
+    { "ingredient_id": 1, "name": "Bœuf", "unit": "g", "quantity": 500 },
+    { "ingredient_id": 2, "name": "Poivron rouge", "unit": "unité", "quantity": 1 },
+    { "ingredient_id": 3, "name": "Carotte", "unit": "unité", "quantity": 1 },
+    { "ingredient_id": 8, "name": "Brocoli", "unit": "unité", "quantity": 1 },
+    { "ingredient_id": 9, "name": "Graines de sésame", "unit": "cuillère à soupe", "quantity": 2 },
+    { "ingredient_id": 10, "name": "Sauce soja", "unit": "cuillère à soupe", "quantity": 3 },
+    { "ingredient_id": 11, "name": "Miel", "unit": "cuillère à soupe", "quantity": 1 },
+    { "ingredient_id": 12, "name": "Gousse d'ail", "unit": "unité", "quantity": 2 },
+    { "ingredient_id": 13, "name": "Gingembre râpé", "unit": "cuillère à soupe", "quantity": 1 },
+    { "ingredient_id": 14, "name": "Huile de cuisson", "unit": "ml", "quantity": 15 },
+    { "ingredient_id": 15, "name": "Sel", "unit": "pincée", "quantity": 1 },
+    { "ingredient_id": 16, "name": "Poivre", "unit": "pincée", "quantity": 1 }
+    ]
   },
   {
-    "id": 2,
-    "name": "Produit 2",
-    "price": 15.50
+    "recipe_id": 2,
+    "title": "Sushis",
+    "slug": "sushis",
+    "prep_time": 30,
+    "cook_time": 20,
+    "image": "src/assets/sushis2.jpg",
+    "servings": 4,
+    "date_added": "2025-08-05 11:30:00",
+    "date_modified": "2025-08-05 11:30:00",
+    "summary": "Recette de sushis. Idéale pour débuter votre repas.",
+    "ingredients": [
+    { "ingredient_id": 17, "name": "Riz à sushi", "unit": "g", "quantity": 500 },
+    { "ingredient_id": 18, "name": "Saumon frais", "unit": "g", "quantity": 300 },
+    { "ingredient_id": 19, "name": "Thon frais", "unit": "g", "quantity": 200},
+    { "ingredient_id": 20, "name": "Concombre", "unit": "unité", "quantity": 1 },
+    { "ingredient_id": 21, "name": "Avocat", "unit": "unité", "quantity": 1 },
+    { "ingredient_id": 22, "name": "Feuille de nori", "unit": "unité", "quantity": 5 },
+    { "ingredient_id": 23, "name": "Vinaigre de riz", "unit": "ml", "quantity": 50 },
+    { "ingredient_id": 24, "name": "Sucre", "unit": "cuillère à soupe", "quantity": 2 },
+    { "ingredient_id": 25, "name": "Wasabi", "unit": "cuillère à café", "quantity": 1 },
+    { "ingredient_id": 26, "name": "Gingembre mariné", "unit": "g", "quantity": 10 }
+    ]
+  },
+
+  {
+    "recipe_id": 3,
+    "title": "Chakchouka",
+    "slug": "chakchouka",
+    "prep_time": 20,
+    "cook_time": 30,
+    "image": "src/assets/chakchouka.jpg",
+    "servings": 4,
+    "date_added": "2025-08-05 12:00:00",
+    "date_modified": "2025-08-05 12:00:00",
+    "summary": "Plat maghrébin à base de tomates, d'œufs, de poivrons et d'oignons.",
+    "ingredients": [
+    { "ingredient_id": 27, "name": "Poivron vert", "unit": "unité", "quantity": 4 },
+    { "ingredient_id": 28, "name": "Oignon", "unit": "unité", "quantity": 2 },
+    { "ingredient_id": 29, "name": "Tomate", "unit": "unité", "quantity": 6 },
+    { "ingredient_id": 30, "name": "Œuf", "unit": "unité", "quantity": 4 },
+    { "ingredient_id": 31, "name": "Huile d'olive", "unit": "cuillère à café", "quantity": 2 },
+    { "ingredient_id": 32, "name": "Paprika", "unit": "cuillère à soupe", "quantity": 1 },
+    { "ingredient_id": 33, "name": "Cumin", "unit": "cuillère à café", "quantity": 1 },
+    { "ingredient_id": 34, "name": "Persil frais", "unit": "g", "quantity": 5 }
+    ]
+  },
+  { 
+    "recipe_id": 4, 
+    "title": "Tarte à la noix de coco", 
+    "slug": "tarte-noix-de-coco", 
+    "prep_time": 15, 
+    "cook_time": 30, 
+    "image": "src/assets/tarte_coco.jpg", 
+    "servings": 8, 
+    "date_added": "2025-08-05 12:30:00", 
+    "date_modified": "2025-08-05 12:30:00", 
+    "summary": "Délicieuse tarte à la noix de coco, crémeuse et exotique. Un régal.",
+     "ingredients": [
+    { "ingredient_id": 35, "name": "Pâte brisée", "unit": "g", "quantity": 230 },
+    { "ingredient_id": 36, "name": "Oeufs", "unit": "unité", "quantity": 3 },
+    { "ingredient_id": 37, "name": "Sucre", "unit": "g", "quantity": 150 },
+    { "ingredient_id": 38, "name": "Crème liquide", "unit": "ml", "quantity": 200 },
+    { "ingredient_id": 39, "name": "Noix de coco râpée", "unit": "g", "quantity": 200 }
+    ]  
   },
   {
-    "id": 3,
-    "name": "Produit 3",
-    "price": 22.00
+  "recipe_id": 5,
+  "title": "Mojito à l'orange",
+  "slug": "mojito-orange",
+  "prep_time": 10,
+  "cook_time": 0,
+  "image": "src/assets/mojito_orange.jpg",
+  "servings": 1,
+  "date_added": "2025-08-05 13:00:00",
+  "date_modified": "2025-08-05 13:00:00",
+  "summary": "Un mojito rafraîchissant à l'orange sanguine, parfait pour l'été.",
+  "ingredients": [
+    { "ingredient_id": 40, "name": "Orange sanguine", "unit": "unité", "quantity": 2 },
+    { "ingredient_id": 41, "name": "Feuille de menthe", "unit": "unité", "quantity": 10 },
+    { "ingredient_id": 42, "name": "Citron vert", "unit": "unité", "quantity": 1 },
+    { "ingredient_id": 43, "name": "Rhum blanc", "unit": "ml", "quantity": 60 },
+    { "ingredient_id": 44, "name": "Eau gazeuse", "unit": "ml", "quantity": 400 },
+    { "ingredient_id": 45, "name": "Glaçons", "unit": "unité", "quantity": 12 }
+    ]
+  },
+  {
+  "recipe_id": 6,
+  "title": "Nouilles aux crevettes et oeufs de caille",
+  "slug": "nouilles-crevettes-oeufs-de-caille",
+  "prep_time": 15,
+  "cook_time": 20,
+  "image": "src/assets/nouilles.jpg",
+  "servings": 4,
+  "date_added": "2025-08-05 14:00:00",
+  "date_modified": "2025-08-05 14:00:00",
+  "summary": "Savourez notre plat exquis de nouilles aux crevettes et œufs de caille, aux herbes fraîches, une harmonie parfaite entre terre et mer. Les nouilles al dente sont sautées avec des crevettes juteuses, rehaussées par des épices délicates et une sauce savoureuse.",
+  "ingredients": [
+      { "ingredient_id": 46, "name": "Nouilles", "unit": "g", "quantity": 200 },
+      { "ingredient_id": 47, "name": "Crevettes", "unit": "g", "quantity": 300 },
+      { "ingredient_id": 48, "name": "Œuf de caille", "unit": "unité", "quantity": 12 },
+      { "ingredient_id": 49, "name": "Gousse d'ail", "unit": "unité", "quantity": 2 },
+      { "ingredient_id": 50, "name": "Morceau de gingembre", "unit": "unité", "quantity": 1 },
+      { "ingredient_id": 51, "name": "Poivron rouge", "unit": "unité", "quantity": 1 },
+      { "ingredient_id": 52, "name": "Poivron vert", "unit": "unité", "quantity": 1 },
+      { "ingredient_id": 53, "name": "Sauce soja", "unit": "cuillère à soupe", "quantity": 3 },
+      { "ingredient_id": 54, "name": "Miel", "unit": "cuillère à soupe", "quantity": 1 },
+      { "ingredient_id": 55, "name": "Huile d'olive", "unit": "cuillère à soupe", "quantity": 2 },
+      { "ingredient_id": 56, "name": "Coriandre fraîche", "unit": "g", "quantity": 20 }
+    ]
+  },
+  {
+  "recipe_id": 7,
+  "title": "Pâtes à la crème",
+  "slug": "pates-a-la-creme",
+  "prep_time": 10,
+  "cook_time": 20,
+  "image": "src/assets/pates_creme.jpg",
+  "servings": 4,
+  "date_added": "2025-08-05 14:30:00",
+  "date_modified": "2025-08-05 14:30:00",
+  "summary": "Des pâtes à la crème onctueuse, rehaussées de fromage fondu et d'une touche d'ail, offrent un repas réconfortant et délicieux. Idéales pour un dîner rapide, elles se marient parfaitement avec des herbes fraîches et une pincée de poivre noir pour une saveur irrésistible.",
+  "ingredients": [
+    { "ingredient_id": 57, "name": "Pâtes", "unit": "g", "quantity": 400 },
+    { "ingredient_id": 58, "name": "Crème fraîche", "unit": "ml", "quantity": 200 },
+    { "ingredient_id": 59, "name": "Parmesan râpé", "unit": "g", "quantity": 50 },
+    { "ingredient_id": 60, "name": "Gousse d'ail", "unit": "unité", "quantity": 2 },
+    { "ingredient_id": 61, "name": "Oignon", "unit": "g", "quantity": 1 },
+    { "ingredient_id": 62, "name": "Persil frais", "unit": "cuillère à soupe", "quantity": 2 },
+    { "ingredient_id": 63, "name": "Sel", "unit": "pincée", "quantity": 1 },
+    { "ingredient_id": 64, "name": "Beurre", "unit": "g", "quantity": 20 }  
+    ]
+  },
+  {
+  "recipe_id": 8,
+  "title": "Burger du chef",
+  "slug": "burger-du-chef",
+  "prep_time": 15,
+  "cook_time": 15,
+  "image": "src/assets/burger.jpg",
+  "servings": 4,
+  "date_added": "2025-08-05 14:40:00",
+  "date_modified": "2025-08-05 14:40:00",
+  "summary": "Ce burger appétissant se distingue par son pain brioché doré, ses tranches juteuses de bœuf de première qualité, et son mélange savoureux de fromages fondants. Garnitures fraîches et colorées, comme la laitue croquante, les tomates mûres et les oignons caramélisés, se marient parfaitement avec une sauce maison crémeuse.",
+  "ingredients": [
+    { "ingredient_id": 65, "name": "Viande hachée", "unit": "g", "quantity": 500 },
+    { "ingredient_id": 66, "name": "Pain à burger", "unit": "unité", "quantity": 4 },
+    { "ingredient_id": 67, "name": "Feuille de laitue", "unit": "unité", "quantity": 4 },
+    { "ingredient_id": 68, "name": "Mayonnaise", "unit": "unité", "quantity": 1 },
+    { "ingredient_id": 69, "name": "Oignon", "unit": "unité", "quantity": 1 },
+    { "ingredient_id": 70, "name": "Tomate", "unit": "g", "quantity": 2 }   
+  ]
+  },
+  {
+  "recipe_id": 9,
+  "title": "Salade gourmande au poulet grillé",
+  "slug": "salade-gourmande-poulet-grille",
+  "prep_time": 15,
+  "cook_time": 10,
+  "image": "src/assets/salade_poulet-grille.jpg",
+  "servings": 4,
+  "date_added": "2025-08-05 14:50:00",
+  "date_modified": "2025-08-05 14:50:00",
+  "summary": "Cette salade gourmande au poulet grillé est un mélange parfait de saveurs et de textures. Elle combine des morceaux de poulet juteux, des cubes de fromage, des tomates cerises, et une variété de graines et de légumes croquants. Un repas équilibré et délicieux pour toutes les occasions.",
+  "ingredients": [
+    { "ingredient_id": 71, "name": "Filet de poulet", "unit": "unité", "quantity": 2 },
+    { "ingredient_id": 72, "name": "Salade verte", "unit": "g", "quantity": 200 },
+    { "ingredient_id": 73, "name": "Concombre", "unit": "unité", "quantity": 1 },
+    { "ingredient_id": 74, "name": "Tomate", "unit": "unité", "quantity": 2 },
+    { "ingredient_id": 75, "name": "Avocat", "unit": "unité", "quantity": 1 },
+    { "ingredient_id": 76, "name": "Noix", "unit": "g", "quantity": 50 },
+    { "ingredient_id": 77, "name": "Fromage râpé", "unit": "g", "quantity": 50 },
+    { "ingredient_id": 78, "name": "Sel", "unit": "pincée", "quantity": 2 },
+    { "ingredient_id": 79, "name": "Poivre", "unit": "pincée", "quantity": 1 },
+    { "ingredient_id": 80, "name": "Huile d'olive", "unit": "càcuillère à soupes", "quantity": 2 },
+    { "ingredient_id": 81, "name": "Vinaigre balsamique", "unit": "cuillère à soupe", "quantity": 2 },
+    { "ingredient_id": 82, "name": "Moutarde", "unit": "cuillère à soupe", "quantity": 1 }
+    ]
   }
-]
+],
+  "steps": [
+    { "step_id": 1, "title": "Préparer les ingrédients", "content": "Commencez par préparer tous les ingrédients. Coupez les morceaux de bœuf en cubes de taille uniforme pour une cuisson homogène. Lavez et découpez les légumes : coupez les poivrons en lanières, les carottes en rondelles et le brocoli en petits bouquets.", "order": 1, "recipe_id": 1 },
+    { "step_id": 2, "title": "Dorer le bœuf", "content": "Faire chauffer un peu d'huile dans une grande poêle à feu moyen. Lorsque l'huile est chaude, ajoutez les morceaux de bœuf et faites-les dorer de tous les côtés jusqu'à ce qu'ils soient bien caramélisés. Retirez les morceaux de bœuf de la poêle et réservez-les dans un plat.", "order": 2, "recipe_id": 1 },
+    { "step_id": 3, "title": "Sauter les légumes", "content": "Dans la même poêle, ajoutez un peu d'huile si nécessaire. Ajoutez les légumes coupés (poivrons, carottes, brocolis) et faites-les sauter à feu moyen-élevé. Remuez fréquemment jusqu'à ce qu'ils soient tendres mais encore croquants. Vous pouvez ajouter un peu d'eau pour aider à la cuisson des légumes si nécessaire.", "order": 3, "recipe_id": 1 },
+    { "step_id": 4, "title": "Ajouter les épices et les graines de sésame", "content": "Incorporez les graines de sésame grillées, le gingembre râpé et l'ail émincé aux légumes. Faites sauter pendant une minute pour libérer les arômes. Assurez-vous que les graines de sésame soient bien réparties et que les épices couvrent uniformément les légumes.", "order": 4, "recipe_id": 1 },
+    { "step_id": 5, "title": "Déglacer et mijoter", "content": "Remettez les morceaux de bœuf dans la poêle avec les légumes. Ajoutez la sauce soja, le miel, et un peu d'eau pour déglacer la poêle. Remuez bien pour que la sauce enrobe les morceaux de bœuf et les légumes. Laissez mijoter pendant environ 5 minutes jusqu'à ce que la sauce épaississe légèrement et enrobe bien le mélange.", "order": 5, "recipe_id": 1 },
+    { "step_id": 6, "title": "Finaliser et servir", "content": "Goûtez la sauce et rectifiez l'assaisonnement avec du sel et du poivre si nécessaire. Vous pouvez également ajouter un peu de sauce soja ou de miel selon vos préférences. Servez chaud avec du riz basmati ou des nouilles asiatiques. Garnissez avec des oignons verts hachés ou des feuilles de coriandre si désiré.", "order": 6, "recipe_id": 1 },
+    { "step_id": 7, "title": "Conseils et variantes", "content": "Pour varier les saveurs, vous pouvez ajouter des champignons shiitake ou des pousses de bambou dans la poêle avec les légumes. Si vous aimez les plats épicés, n'hésitez pas à ajouter un peu de piment rouge ou de sauce chili pendant la cuisson. Pour une option sans gluten, utilisez de la sauce soja sans gluten.", "order": 7, "recipe_id": 1 },
+
+    { "step_id": 8, "title": "Préparer les ingrédients", "content": "Commencez par préparer tous les ingrédients. Rincez le riz à sushi sous l'eau froide jusqu'à ce que l'eau soit claire. Laissez égoutter pendant environ 30 minutes.", "order": 1, "recipe_id": 2 },
+    { "step_id": 9, "title": "Cuire le riz", "content": "Faites cuire le riz à sushi dans un cuiseur à riz ou dans une casserole avec de l'eau. Une fois cuit, mélangez-le délicatement avec du vinaigre de riz, du sucre et du sel. Laissez refroidir.", "order": 2, "recipe_id": 2 },
+    { "step_id": 10, "title": "Préparer les garnitures", "content": "Coupez le poisson cru (saumon, thon) en fines tranches. Coupez les légumes (concombre, avocat) en fines lanières.", "order": 3, "recipe_id": 2 },
+    { "step_id": 11, "title": "Rouler les sushis", "content": "Placez une feuille de nori sur une natte en bambou. Étalez une couche de riz sur la feuille de nori, en laissant une bordure libre en haut. Disposez les garnitures sur le riz. Roulez fermement à l'aide de la natte en bambou.", "order": 4, "recipe_id": 2 },
+    { "step_id": 12, "title": "Couper les rouleaux", "content": "Utilisez un couteau bien aiguisé pour couper les rouleaux en morceaux de taille égale. Essuyez le couteau avec un chiffon humide entre chaque coupe pour des tranches nettes.", "order": 5, "recipe_id": 2 },
+    { "step_id": 13, "title": "Servir", "content": "Disposez les sushis sur un plat de service. Servez avec de la sauce soja, du wasabi et du gingembre mariné. Dégustez immédiatement pour une fraîcheur optimale.", "order": 6, "recipe_id": 2 },
+    { "step_id": 14, "title": "Conseils et variantes", "content": "Pour varier, vous pouvez ajouter des crevettes, des œufs de saumon ou des légumes marinés. Pour les végétariens, utilisez des légumes comme les carottes et les radis. Soyez créatif avec les combinaisons de garnitures !", "order": 7, "recipe_id": 2 },
+
+    { "step_id": 15, "title": "Préparer les ingrédients", "content": "Coupez les poivrons en lanières, émincez les oignons et hachez l'ail. Épluchez et concassez les tomates.", "order": 1, "recipe_id": 3 },
+    { "step_id": 16, "title": "Faire revenir les légumes", "content": "Dans une grande poêle, faites chauffer l'huile d'olive. Ajoutez les oignons et l'ail, faites revenir jusqu'à ce qu'ils soient translucides. Ajoutez les poivrons et laissez cuire pendant 10 minutes.", "order": 2, "recipe_id": 3 },
+    { "step_id": 17, "title": "Ajouter les tomates et les épices", "content": "Ajoutez les tomates concassées, le paprika, le cumin, le sel et le poivre. Laissez mijoter à feu doux pendant 15-20 minutes.", "order": 3, "recipe_id": 3 },
+    { "step_id": 18, "title": "Casser les œufs", "content": "Faites des petits puits dans la préparation et cassez-y les œufs. Couvrez la poêle et laissez cuire jusqu'à ce que les œufs soient cuits à votre goût.", "order": 4, "recipe_id": 3 },
+    { "step_id": 19, "title": "Servir", "content": "Servez la chakchouka chaude, parsemée de persil frais haché, avec du pain frais.", "order": 5, "recipe_id": 3 },
+    { "step_id": 20, "title": "Conseils et variantes", "content": "Vous pouvez ajouter des épices comme le piment de Cayenne pour un goût plus relevé. Pour une version végétarienne, ajoutez des courgettes et des aubergines.", "order": 6, "recipe_id": 3 },
+
+    { "step_id": 21, "title": "Préparer la pâte", "content": "Préchauffez le four à 180°C. Étalez la pâte brisée dans un moule à tarte et piquez le fond avec une fourchette.", "order": 1, "recipe_id": 4 },
+    { "step_id": 22, "title": "Préparer la garniture", "content": "Dans un saladier, mélangez les œufs, le sucre, la crème liquide et la noix de coco râpée jusqu'à obtenir un mélange homogène.", "order": 2, "recipe_id": 4 },
+    { "step_id": 23, "title": "Garnir la tarte", "content": "Versez la préparation à la noix de coco sur le fond de tarte. Lissez la surface avec une spatule.", "order": 3, "recipe_id": 4 },
+    { "step_id": 24, "title": "Cuire la tarte", "content": "Enfournez la tarte pendant environ 25-30 minutes, jusqu'à ce qu'elle soit dorée. Laissez refroidir avant de servir.", "order": 4, "recipe_id": 4 },
+    { "step_id": 25, "title": "Servir", "content": "Servez la tarte froide ou à température ambiante, accompagnée de crème fouettée ou de glace à la vanille.", "order": 5, "recipe_id": 4 },
+
+    { "step_id": 26, "title": "Préparer les ingrédients", "content": "Coupez les oranges sanguines en quartiers et pressez-en une pour obtenir le jus. Réservez.", "order": 1, "recipe_id": 5 },
+    { "step_id": 27, "title": "Mélanger les saveurs", "content": "Dans un verre, écrasez les feuilles de menthe avec le sucre et le jus de citron vert.", "order": 2, "recipe_id": 5 },
+    { "step_id": 28, "title": "Ajouter les liquides", "content": "Ajoutez les quartiers d'orange sanguine, le jus d'orange sanguine et le rhum. Remplissez le verre de glace pilée.", "order": 3, "recipe_id": 5 },
+    { "step_id": 29, "title": "Compléter avec l'eau gazeuse", "content": "Complétez avec de l'eau gazeuse. Remuez doucement pour bien mélanger.", "order": 4, "recipe_id": 5 },
+    { "step_id": 30, "title": "Décorer et servir", "content": "Décorez avec une tranche d'orange sanguine et quelques feuilles de menthe. Servez immédiatement.", "order": 5, "recipe_id": 5 },
+
+    { "step_id": 31, "title": "Préparer les ingrédients", "content": "Décortiquez les crevettes, épluchez et hachez l'ail et le gingembre. Coupez les légumes en fines lanières.", "order": 1, "recipe_id": 6 },
+    { "step_id": 32, "title": "Cuire les nouilles", "content": "Faites cuire les nouilles selon les instructions du paquet. Égouttez et réservez.", "order": 2, "recipe_id": 6 },
+    { "step_id": 33, "title": "Sauter les crevettes", "content": "Dans une grande poêle, faites chauffer l'huile d'olive. Ajoutez l'ail, le gingembre et les crevettes, faites revenir jusqu'à ce que les crevettes soient roses.", "order": 3, "recipe_id": 6 },
+    { "step_id": 34, "title": "Ajouter les légumes et la sauce", "content": "Ajoutez les légumes dans la poêle et faites-les sauter pendant 5 minutes. Ajoutez la sauce soja et le miel, mélangez bien.", "order": 4, "recipe_id": 6 },
+    { "step_id": 35, "title": "Incorporer les nouilles et les œufs de caille", "content": "Ajoutez les nouilles cuites et les œufs de caille dans la poêle. Mélangez délicatement pour bien enrober les nouilles de sauce. Laissez cuire encore 2-3 minutes.", "order": 5, "recipe_id": 6 },
+    { "step_id": 36, "title": "Servir", "content": "Servez les nouilles aux crevettes et œufs de caille chaudes, parsemées de coriandre fraîche.", "order": 6, "recipe_id": 6 },
+    { "step_id": 37, "title": "Conseils et variantes", "content": "Vous pouvez ajouter des épices comme du piment rouge pour un goût plus relevé. Remplacez les légumes par ceux de votre choix.", "order": 7, "recipe_id": 6 },
+
+    { "step_id": 38, "title": "Préparer les ingrédients", "content": "Hachez finement l'ail et l'oignon. Râpez le parmesan.", "order": 1, "recipe_id": 7 },
+    { "step_id": 39, "title": "Cuire les pâtes", "content": "Faites cuire les pâtes selon les instructions du paquet. Égouttez et réservez.", "order": 2, "recipe_id": 7 },
+    { "step_id": 40, "title": "Préparer la sauce", "content": "Dans une poêle, faites fondre le beurre. Ajoutez l'ail et l'oignon, faites revenir jusqu'à ce qu'ils soient translucides.", "order": 3, "recipe_id": 7 },
+    { "step_id": 41, "title": "Ajouter la crème et le fromage", "content": "Ajoutez la crème fraîche dans la poêle et laissez mijoter à feu doux. Incorporez le parmesan râpé et mélangez jusqu'à obtenir une sauce onctueuse.", "order": 4, "recipe_id": 7 },
+    { "step_id": 42, "title": "Incorporer les pâtes", "content": "Ajoutez les pâtes cuites dans la poêle avec la sauce. Mélangez bien pour enrober les pâtes de sauce. Laissez cuire encore 2-3 minutes.", "order": 5, "recipe_id": 7 },
+    { "step_id": 43, "title": "Servir", "content": "Servez les pâtes à la crème chaudes, parsemées de persil frais haché et de poivre noir moulu.", "order": 6, "recipe_id": 7 },
+    { "step_id": 44, "title": "Conseils et variantes", "content": "Ajoutez des lardons ou du poulet pour une version plus gourmande. Utilisez du fromage bleu pour une saveur différente.", "order": 7, "recipe_id": 7 },
+
+    { "step_id": 45, "title": "Préparer les ingrédients", "content": "Commencez par préparer tous les ingrédients. Coupez les oignons en fines rondelles, tranchez les tomates et préparez les feuilles de laitue. Assurez-vous que la viande hachée soit à température ambiante.", "order": 1, "recipe_id": 8 },
+    { "step_id": 46, "title": "Préparer les galettes de bœuf", "content": "Formez des galettes avec la viande hachée, assaisonnez-les avec du sel et du poivre. Faites chauffer un peu d'huile dans une poêle à feu moyen et faites cuire les galettes jusqu'à ce qu'elles soient bien dorées de chaque côté.", "order": 2, "recipe_id": 8 },
+    { "step_id": 47, "title": "Cuisson des oignons", "content": "Dans la même poêle, ajoutez un peu d'huile si nécessaire et faites revenir les rondelles d'oignon jusqu'à ce qu'elles soient tendres et légèrement caramélisées.", "order": 3, "recipe_id": 8 },
+    { "step_id": 48, "title": "Assembler les burgers", "content": "Faites griller légèrement les pains à burger. Étalez une fine couche de mayonnaise sur chaque moitié de pain. Placez une feuille de laitue, une tranche de tomate et une galette de bœuf sur la moitié inférieure du pain. Ajoutez quelques rondelles d'oignon caramélisé et une tranche de fromage si désiré.", "order": 4, "recipe_id": 8 },
+    { "step_id": 49, "title": "Servir", "content": "Recouvrez avec la moitié supérieure du pain à burger. Servez immédiatement avec des frites maison ou une salade verte.", "order": 5, "recipe_id": 8 },
+    { "step_id": 50, "title": "Conseils et variantes", "content": "Pour varier les saveurs, vous pouvez ajouter des pickles, du bacon croustillant ou une sauce barbecue. Pour une option végétarienne, remplacez la galette de bœuf par une galette de légumes.", "order": 6, "recipe_id": 8 },
+
+    { "step_id": 51, "title": "Préparer les ingrédients", "content": "Coupez le poulet en fines tranches. Lavez et coupez les légumes.", "order": 1, "recipe_id": 9 },
+    { "step_id": 52, "title": "Griller le poulet", "content": "Faites griller les tranches de poulet dans une poêle chaude avec un peu d'huile d'olive. Assaisonnez de sel et de poivre.", "order": 2, "recipe_id": 9 },
+    { "step_id": 53, "title": "Préparer la vinaigrette", "content": "Dans un bol, mélangez l'huile d'olive, le vinaigre balsamique, le miel, la moutarde, le sel et le poivre.", "order": 3, "recipe_id": 9 },
+    { "step_id": 54, "title": "Assembler la salade", "content": "Dans un grand saladier, mélangez les légumes, le poulet grillé et la vinaigrette. Ajoutez des noix et du fromage râpé.", "order": 4, "recipe_id": 9 },
+    { "step_id": 55, "title": "Servir", "content": "Servez immédiatement ou réfrigérez jusqu'au moment de servir.", "order": 5, "recipe_id": 9 },
+    { "step_id": 56, "title": "Conseils et variantes", "content": "Ajoutez des fruits frais comme des fraises ou des pommes pour une touche sucrée. Utilisez du fromage feta pour une saveur différente.", "order": 6, "recipe_id": 9 }
+  ],
+
+    "comments": [
+    { "comment_id": 1, "content": "Un plat délicieux ! La combinaison des légumes avec le bœuf est parfaite et les graines de sésame ajoutent une touche croquante. Posté le : 15 juin 2024 à 14:35 Posté par : Marie69", "date_time": "2024-06-15 14:35:00", "rating": 5, "recipe_id": 1, "user_id": 1 },
+    { "comment_id": 2, "content": "Excellent ! La recette est facile à suivre et le résultat est savoureux. J'ai ajouté un peu de piment pour plus de piquant. Posté le : 10 juin 2023 à 09:22 par : JeanDupont", "date_time": "2023-06-10 09:22:00", "rating": 5, "recipe_id": 1, "user_id": 4 },
+    { "comment_id": 3, "content": "Des sushis vraiment savoureux et frais. La recette est simple à suivre et le résultat est digne d'un restaurant japonais. Posté le : 20 juillet 2024 à 18:45 Posté par : SushiLover89", "date_time": "2024-07-20 18:45:00", "rating": 5, "recipe_id": 2, "user_id": 3 },
+    { "comment_id": 4, "content": "Excellente recette ! Les sushis sont parfaits pour une soirée entre amis. J'ai ajouté des crevettes et c'était délicieux. Posté le : 15 juillet 2024 à 12:30 par : KimSushi", "date_time": "2024-07-15 12:30:00", "rating": 5, "recipe_id": 2, "user_id": 6 }
+  ],
+  "events": [
+    {
+      "event_id": 1,
+      "name": "Marché chinois éphémère",
+      "type": "Marché",
+      "summary": "Un marché en plein air avec des produits italiens authentiques et des dégustations.",
+      "start_datetime": "2024-08-19 10:00:00",
+      "end_datetime": "2024-08-20 18:00:00",
+      "location": "Jardin des Plantes, Lyon",
+      "image": "src/assets/marche.jpg",
+      "price": "Gratuite (Démonstrations et dégustations incluses)",
+      "max_participants": null,
+      "status": "Planifié",
+      "slug": "marche-chinois-ephemere",
+      "organizer_id": null,
+      "description": "Venez découvrir la richesse de la culture chinoise lors de notre marché éphémère chinois ! Parcourez les différents stands proposant une variété de produits authentiques et participez à des ateliers interactifs pour une expérience immersive.",
+      "program": [
+        "Introduction aux traditions et à la culture chinoise",
+        "Démonstrations de cuisine chinoise par des chefs renommés",
+        "Ateliers de calligraphie et de peinture chinoise",
+        "Stands de produits artisanaux et alimentaires",
+        "Spectacles de danse et de musique traditionnelle chinoise"
+      ],
+      "stands": [
+        "Gastronomie : Raviolis, canard laqué, nouilles sautées",
+        "Artisanat : Poteries, soieries, éventails peints à la main",
+        "Bien-être : Ateliers de Tai Chi et de médecine traditionnelle chinoise"
+      ],
+      "discovery": [
+        "Les saveurs authentiques de la cuisine chinoise",
+        "Les techniques traditionnelles de l'artisanat chinois",
+        "Les secrets de la culture et des traditions chinoises",
+        "L'art de vivre à la chinoise : santé et bien-être",
+        "Des astuces pour intégrer des éléments de la culture chinoise dans votre quotidien"
+      ]
+    },
+    {
+      "event_id": 2,
+      "name": "Cours de cuisine régionale",
+      "type": "Cours",
+      "summary": "Explorez les spécialités de différentes régions italiennes dans ce cours interactif.",
+      "start_datetime": "2024-05-20 09:30:00",
+      "end_datetime": "2024-05-20 15:30:00",
+      "location": "Académie de Cuisine 'La Gourmandise Lyonnaise'",
+      "image": "src/assets/plat.jpg",
+      "price": "150€ par personne (ingrédients, repas et boissons inclus)",
+      "max_participants": null,
+      "status": "Planifié",
+      "slug": "cours-de-cuisine-regionale",
+      "organizer_id": null,
+      "description": "Partez à la découverte des trésors culinaires de la France lors de notre cours de cuisine régionale ! Guidés par notre chef étoilé, vous explorerez les saveurs uniques de différentes régions françaises et apprendrez à maîtriser leurs plats emblématiques.",
+      "program": [
+        "Introduction à la diversité de la cuisine française",
+        "Préparation de 3 plats représentatifs de différentes régions",
+        "Techniques de cuisson et de présentation authentiques",
+        "Découverte des produits du terroir de chaque régions",
+        "Dégustation des plats préparés accompagnés de vins français"
+      ],
+      "stands": [
+        "Bretagne : Galettes de sarrasins",
+        "Bourgogne : Bœuf bourguignon",
+        "Provence : Ratatouille niçoise"
+      ],
+      "discovery": [
+        "Les spécificités culinaires de chaque région française",
+        "La sélection et l'utilisation des produits du terroir",
+        "Les techniques de préparation traditionnelles",
+        "L'art de l'association des saveurs régionales",
+        "Les secrets pour reproduire ces plats chez vous"
+      ]
+    },
+    {
+      "event_id": 3,
+      "name": "Atelier de fabrication de pain",
+      "type": "Atelier",
+      "summary": "Apprenez à faire vos pains et découvrez les secrets de la boulangerie artisanale.",
+      "start_datetime": "2024-06-15 09:00:00",
+      "end_datetime": "2024-06-15 14:00:00",
+      "location": "Boulangerie Artisanale 'Le Fournil Doré', Paris",
+      "image": "src/assets/pain_maison.jpg",
+      "price": "45€ par personne (matériel et déjeuner inclus)",
+      "max_participants": null,
+      "status": "Planifié",
+      "slug": "atelier-fabrication-pain",
+      "organizer_id": null,
+      "description": "Rejoignez-nous pour un atelier de fabrication de pain où vous découvrirez les secrets de la boulangerie artisanale française ! Guidés par notre maître boulanger, vous apprendrez à préparer différentes variétés de pains et à maîtriser les techniques traditionnelles de panification.",
+      "program": [
+        "Introduction à l'art de la boulangerie française",
+        "Préparation de plusieurs types de pains : baguette, pain de campagne, pain aux céréales",
+        "Techniques de pétrissage, de levée et de cuisson",
+        "Utilisation de différents types de farines et levures",
+        "Dégustation des pains fraîchement cuits accompagnés de vins et fromages français"
+      ],
+      "stands": [
+        "Baguette traditionnelle",
+        "Pain de campagne",
+        "Pain aux céréales"
+      ],
+      "discovery": [
+        "Les spécificités des différentes variétés de pain",
+        "La sélection et l'utilisation des ingrédients",
+        "Les techniques de pétrissage et de levée",
+        "Les astuces pour une cuisson parfaite",
+        "Comment reproduire ces pains chez vous"
+      ]
+    }
+  ]
+}
+
+
