@@ -1,6 +1,5 @@
 <script>
 import CommentRating from '@/components/CommentRating.vue';
-import CommentPagination from '@/components/recipe/CommentPagination.vue';
 import RecipeComment from '@/components/recipe/RecipeComment.vue';
 import RecipeInformation from '@/components/recipe/RecipeInformation.vue';
 import RecipeIngredient from '@/components/recipe/RecipeIngredient.vue';
@@ -16,7 +15,6 @@ import RecipeTitle from '@/components/recipe/RecipeTitle.vue';
             RecipeInformation, 
             RecipeIngredient, 
             RecipeComment,
-            CommentPagination,
             RecipeTitle
         },
         props: {
@@ -88,9 +86,9 @@ import RecipeTitle from '@/components/recipe/RecipeTitle.vue';
                 </div>
             </div>
         </div>
-        <div class="container my-5">
+        <div class="container mt-5">
             <div class="row">
-                <h3 class="text-center mt-5 mb-4">Commentaires</h3>
+                <h3 class="text-center mb-4">Commentaires</h3>
                 <div class="col-md-8 offset-md-2">
                     <RecipeComment 
                       :comments="currentRecipeComments" 
@@ -99,10 +97,9 @@ import RecipeTitle from '@/components/recipe/RecipeTitle.vue';
                 </div>
             </div>
         </div>
-        <CommentPagination />
         
         <div class="text-center mb-5">
-            <router-link to="/commentForm"
+            <router-link to="/ajouter-commentaire"
                 class="btn btn-primary">Soumettre un commentaire
             </router-link>
         </div>

@@ -281,11 +281,13 @@
     { "step_id": 56, "title": "Conseils et variantes", "content": "Ajoutez des fruits frais comme des fraises ou des pommes pour une touche sucrée. Utilisez du fromage feta pour une saveur différente.", "order": 6, "recipe_id": 9 }
   ],
 
-    "comments": [
-    { "comment_id": 1, "content": "Un plat délicieux ! La combinaison des légumes avec le bœuf est parfaite et les graines de sésame ajoutent une touche croquante. Posté le : 15 juin 2024 à 14:35 Posté par : Marie69", "date_time": "2024-06-15 14:35:00", "rating": 5, "recipe_id": 1, "user_id": 1 },
-    { "comment_id": 2, "content": "Excellent ! La recette est facile à suivre et le résultat est savoureux. J'ai ajouté un peu de piment pour plus de piquant. Posté le : 10 juin 2023 à 09:22 par : JeanDupont", "date_time": "2023-06-10 09:22:00", "rating": 5, "recipe_id": 1, "user_id": 4 },
-    { "comment_id": 3, "content": "Des sushis vraiment savoureux et frais. La recette est simple à suivre et le résultat est digne d'un restaurant japonais. Posté le : 20 juillet 2024 à 18:45 Posté par : SushiLover89", "date_time": "2024-07-20 18:45:00", "rating": 5, "recipe_id": 2, "user_id": 3 },
-    { "comment_id": 4, "content": "Excellente recette ! Les sushis sont parfaits pour une soirée entre amis. J'ai ajouté des crevettes et c'était délicieux. Posté le : 15 juillet 2024 à 12:30 par : KimSushi", "date_time": "2024-07-15 12:30:00", "rating": 5, "recipe_id": 2, "user_id": 6 }
+  "comments": [
+    { "comment_id": 1, "content": "Un plat délicieux ! La combinaison des légumes avec le bœuf est parfaite et les graines de sésame ajoutent une touche croquante.", "date_time": "15 juin 2024 - 14:35:00", "rating": 5, "recipe_id": 1, "username": "Marie69" },
+    { "comment_id": 2, "content": "Excellent ! La recette est facile à suivre et le résultat est savoureux. J'ai ajouté un peu de piment pour plus de piquant.", "date_time": "10 juin 2023 - 09:22:00", "rating": 5, "recipe_id": 1, "username": "JeanDupont" },
+    { "comment_id": 5, "content": "Très bon ! Les saveurs sont bien équilibrées et le plat est rapide à préparer.", "date_time": "05 août 2023 - 19:10:00", "rating": 4, "recipe_id": 1, "username": "ClaraR" },
+    { "comment_id": 6, "content": "Une recette parfaite pour un dîner en famille. J'ai remplacé le bœuf par du poulet et c'était tout aussi bon.", "date_time": "12 septembre 2024 - 20:45:00", "rating": 5, "recipe_id": 1, "username": "MaxCuisine" },
+    { "comment_id": 7, "content": "J'adore cette recette ! Les légumes restent croquants et la sauce est délicieuse.", "date_time": "18 octobre 2023 - 18:00:00", "rating": 5, "recipe_id": 1, "username": "SophieG" },
+    { "comment_id": 8, "content": "Très bon plat, mais je recommande de réduire un peu le sel.", "date_time": "15 septembre 2023 - 13:25:00", "rating": 4, "recipe_id": 1, "username": "LeoChef" }
   ],
   "events": [
     {
