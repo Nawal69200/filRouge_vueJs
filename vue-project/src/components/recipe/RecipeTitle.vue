@@ -1,11 +1,11 @@
 <script>
-import RecipeImage from './RecipeImage.vue';
+import GenericImage from '../GenericImage.vue';
 
 
 
 export default {
     name: 'RecipeTitle',
-    components: { RecipeImage },
+    components: { GenericImage },
     props: {
         recipes: {
             type: Array,
@@ -24,7 +24,11 @@ export default {
         <div class="row">
             <div class="col-lg-6 col-md-8 col-sm-10 mx-auto">
                 <div class="card">
-                      <RecipeImage :recipes="[recipe]" />
+                    <GenericImage
+                        :src="recipe.image"
+                        :alt="recipe.title"
+                        classes="img-fluid rounded img-thumbnail"
+                    />
                   </div>
               </div>
           </div>

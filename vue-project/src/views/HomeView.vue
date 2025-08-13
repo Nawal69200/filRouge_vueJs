@@ -42,6 +42,7 @@ export default {
     <FeaturedRecipe v-if="featuredFirstRecipe" :recipe="featuredFirstRecipe">
       Recette de la semaine
     </FeaturedRecipe>
+    
 
     <div class="container my-5">
       <div class="row text-center">

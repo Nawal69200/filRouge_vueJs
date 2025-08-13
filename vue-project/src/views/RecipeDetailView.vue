@@ -55,7 +55,7 @@ import RecipeTitle from '@/components/recipe/RecipeTitle.vue';
 
 <template>
     <main>
-        <div class="container my-5">
+        <div class="container my-5">        
             <RecipeTitle :recipes="[currentRecipe]" /><!--de cette maniere car Object-->
             <div class="row mt-3">
                 <div class="col-lg-6 col-md-8 col-sm-10 mx-auto">
@@ -68,19 +68,23 @@ import RecipeTitle from '@/components/recipe/RecipeTitle.vue';
             </div>
         </div>
         <div class="container my-5">
-            <div class="row">
-                <div class="col-lg-8 col-md-12">
-                    <div class="card">
-                        <div class="card-body">
-                            <h3 class="mb-3 text-center">Préparation</h3>
-                            <RecipeStep :steps="currentRecipeSteps" /><!-- de cette maniere car array-->
+            <div class="card">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-lg-8 col-md-12">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h3 class="mb-3 text-center">Préparation</h3>
+                                    <RecipeStep :steps="currentRecipeSteps" /><!-- de cette maniere car array-->
+                                </div>
+                            </div>
+                        </div>
+                
+                        <div class="col-lg-4 col-md-12 mt-4 mt-md-0">
+                            <RecipeIngredient :recipe="currentRecipe" />
+                            <RecipeInformation :recipe="currentRecipe" />
                         </div>
                     </div>
-                </div>
-                
-                <div class="col-lg-4 col-md-12 mt-4 mt-md-0">
-                    <RecipeIngredient :recipe="currentRecipe" />
-                    <RecipeInformation :recipe="currentRecipe" />
                 </div>
             </div>
         </div>
